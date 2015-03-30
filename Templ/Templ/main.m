@@ -10,8 +10,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // Перечисления
+        enum e{one,two,three};
+        enum e x = one;
+        enum e y = two;
+        enum e z = three;
+        NSLog(@"%i - %i - %i",x,y,z);//0 - 1 - 2
     }
     return 0;
 }
