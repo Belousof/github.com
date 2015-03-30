@@ -10,8 +10,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSString *str = @"hello!";
+        NSLog(@"%@",[str capitalizedString]);
     }
     return 0;
 }
