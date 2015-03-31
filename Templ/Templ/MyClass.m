@@ -10,10 +10,19 @@
 
 @implementation MyClass
 
--(void) simpleAction{}
+@synthesize beta;
 
--(int)add:(int)a
-       to:(int)b{
-    return a + b;
+-(void)alphaOut{
+    NSLog(@"%i",alpha);
+}
+-(void) gammaOut{
+    NSLog(@"%i",_gamma);
+}
+
+-(void) setAlpha:(int)a{
+    alpha = a;
+}
+-(int) alpha{
+    return alpha;
 }
 @end

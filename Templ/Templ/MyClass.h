@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MyClass : NSObject
+@interface MyClass : NSObject{
+    @private
+    int alpha;
+    //int beta;
+}
 
--(void) simpleAction;
--(int) add: (int)a
-        to: (int)b;
+@property int beta;
+@property int gamma;
+
+-(void) alphaOut;
+-(void) gammaOut;
+
+-(void) setAlpha: (int)a;
+-(int) alpha;
 
 @end
